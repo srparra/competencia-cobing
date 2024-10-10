@@ -1,0 +1,13 @@
+
+#texto{
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición suave al cambiar la opacidad */
+}
+
+.visible {
+    opacity: 1;  /* Cuando se agrega la clase 'visible', el texto se vuelve visible */
+}
+
+.invisible {
+    opacity: 0;
+}

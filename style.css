@@ -1,0 +1,181 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff00;
+    padding: 1em;
+}
+
+.nav-logo {
+    flex: 1;
+}
+
+.nav-links {
+    flex: 0.5; /* Ajusta el ancho según sea necesario */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo negro con opacidad del 30% */
+    text-align: center; /* Centra el texto dentro del div */
+    padding: 10px; /* Agrega un poco de espacio interno */
+}
+
+.nav-links li {
+    display: inline; /* Asegúrate de que los elementos de la lista estén en línea */
+    margin: 0 15px; /* Espaciado entre los elementos de la lista */
+}
+
+.nav-links li a {
+    color: rgb(255, 255, 255); /* Color del texto de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.nav-time {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+}
+
+.img-comida {
+    flex: 1;
+}
+
+.text-and-date {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-and-date p {
+    margin-bottom: 20px;
+}
+
+.text-and-date input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-image: none;
+    padding: 1em;
+    text-align: center;
+    background-size: cover;
+    background-image: url(images/fondo.png);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.info {
+    text-align: center;
+    padding: 20px 0;
+    height: 62vh;
+}
+
+.info-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#toggleButton{
+    background-color: #0d6efd;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0.5, 0.5);
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#togleeButton{
+    background-color: #0b5ed7;
+}
+
+.date-input {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo-image{
+    width:  120px;
+    height: 120px;
+}
+
+#time-display{
+    color: white;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+#texto{
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición suave al cambiar la opacidad */
+}
+.visible {
+    opacity: 1;  /* Cuando se agrega la clase 'visible', el texto se vuelve visible */
+}
+
+.invisible {
+    opacity: 0;
+}
+
+
+
+
+
+

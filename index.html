@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Visitas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <div class="container">
+        <header>
+            <h1>Total de Visitas: {{ visitas }}</h1>
+            <h2>Reinicios del Contador: {{ reinicios }}</h2>
+        </header>
+
+        <div class="controls">
+            <form action="{{ url_for('increment_visits') }}" method="POST">
+                <button type="submit" class="button increment">Añadir 2 Visitas</button>
+            </form>
+
+            <form action="{{ url_for('reset_visits') }}" method="POST">
+                <button type="submit" class="button reset">Reiniciar Contador</button>
+            </form>
+
+            <form action="{{ url_for('add_number') }}" method="POST">
+                <input type="number" name="numero" placeholder="Número a añadir" class="number-input">
+                <button type="submit" class="button add">Sumar Número</button>
+            </form>
+
+            <a href="{{ url_for('clear_session') }}" class="link">Eliminar Sesión</a>
+        </div>
+    </div>
+</body>
+</html>
